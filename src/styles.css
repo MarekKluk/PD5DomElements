@@ -1,3 +1,116 @@
 body {
-  color: red;
+    width: 100vh;
+    height: 100vh;
+    background: #efebeb;
+    margin: auto;
+    font-family: 'Roboto Flex', sans-serif;
+}
+main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+h1 {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 23px;
+}
+h2 {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 23px;
+    display: flex;
+    align-self: center;
+
+}
+.list {
+    width: 200px;
+    height: auto;
+    min-height: 500px;
+    border: 1px solid black;
+}
+
+.list-name-with-line {
+    border-bottom: 1px solid black;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+input {
+    background: lightcyan;
+    justify-content: center;
+}
+
+input {
+    appearance: none;
+    border: 1px solid black;
+    outline: none;
+    background: #ffffff;
+}
+
+#input {
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.delete, .moveLeftButton, .moveRightButton {
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.submit-button {
+    width: 40px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.task-list-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.task-list-input-box:last-child {
+    margin-bottom: 10px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 90%;
+    overflow-wrap: anywhere;
+}
+
+.task .buttonWrappers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.task .moveLeftButton {
+    display: flex;
+    align-items: center;
+    order: -1;
+}
+
+.task .taskNameEdit {
+    display: flex;
+    order: -1;
 }
